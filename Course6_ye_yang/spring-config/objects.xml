@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<objects xmlns="http://www.springframework.net">
+
+  <object id="EmployeeController"  type="Course6_ye_yang.Controllers.EmployeeController,Course6_ye_yang" singleton="false">
+    <property name="employeeService" ref="EmployeeService" />
+  </object>
+
+  <object id="EmployeeService" type="Course6_ye_yang_Service.EmployeeService,Course6_ye_yang_Service">
+    <property name="employeeDao" ref="EmployeeDao" />
+  </object>
+
+  <object id="EmployeeDao" type="Course6_ye_yang_Dao.EmployeeDao,Course6_ye_yang_Dao"/>
+
+
+</objects>
