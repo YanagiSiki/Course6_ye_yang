@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="EmployeeFactory.cs" />
     <Compile Include="EmployeeService.cs" />
+    <Compile Include="EmployeeServiceTest.cs" />
     <Compile Include="IEmployeeService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

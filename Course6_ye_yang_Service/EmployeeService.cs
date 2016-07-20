@@ -19,7 +19,7 @@ namespace Course6_ye_yang_Service
         /// <summary>
         /// 定義Dao來操作資料庫
         /// </summary>        
-        IEmployeeDao employeeDao{get;set;}
+        public IEmployeeDao employeeDao { get; set; }
 
         /// <summary>
         /// 取得emp by 表單上的data

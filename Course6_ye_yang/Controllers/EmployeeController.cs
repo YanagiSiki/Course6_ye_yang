@@ -11,6 +11,7 @@ namespace Course6_ye_yang.Controllers
     public class EmployeeController : Controller
     {
         IEmployeeService employeeService { get;set;}
+
         public ActionResult Index()
         {
             return RedirectToAction("SearchEmployee");
