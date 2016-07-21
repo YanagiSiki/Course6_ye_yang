@@ -5,6 +5,5 @@ C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\Course6_ye
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\Course6_ye_yang_Model\obj\Debug\Course6_ye_yang_Model.pdb
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Model\bin\Debug\Course6_ye_yang_Model.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Model\bin\Debug\Course6_ye_yang_Model.pdb
-C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Model\obj\Debug\Course6_ye_yang_Model.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Model\obj\Debug\Course6_ye_yang_Model.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Model\obj\Debug\Course6_ye_yang_Model.pdb
