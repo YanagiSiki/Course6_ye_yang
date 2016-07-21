@@ -13,8 +13,12 @@ namespace Course6_ye_yang_Service
     {
         /// <summary>
         /// 定義Dao來操作資料庫
-        /// </summary>                
+        /// </summary>        
+        public IEmployeeDao employeeDao { get; set; }
 
+        /// <summary>
+        /// 定義Dao來操作資料庫
+        /// </summary>                
         public List<Employee> employees { get; set; }
 
 

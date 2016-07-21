@@ -15,12 +15,6 @@ namespace UnitTest
         [TestMethod]
         public void TestMethod1()
         {
-            //
-            EmployeeServiceTest employeeServiceTest = new EmployeeServiceTest();
-
-
-
-            //
             //Arrange
             IEmployeeService employeeService = new EmployeeServiceTest();
             EmployeeSearchArg arg = new EmployeeSearchArg();
@@ -76,12 +70,11 @@ namespace UnitTest
         public void TestMethod4()
         {
             //Arrange
-            EmployeeServiceTest employeeService = new EmployeeServiceTest();
-            Employee arg = new Employee() { EmployeeID = 1, FirstName = "ABC", LastName = "DEF", Title = "0001", TitleOfCourtesy = "Mr.", HireDate = Convert.ToDateTime("2016 / 01 / 01"), BirthDate = Convert.ToDateTime("2016 / 01 / 01"), Country = "UK", City = "UK", Address = "123", Phone = "09", Gender = "M", ManagerID = "1", MonthlyPayment = 100, YearlyPayment = 100 };
-            //Act
+            EmployeeServiceTest employeeService = new EmployeeServiceTest();            
+            //Act            
             Employee result = employeeService.GetEmployeeByID("0");
             //Assert			
-            Assert.AreEqual(arg, result);
+            Assert.AreEqual(result.EmployeeID, 1);
         }
 
         [TestMethod]
