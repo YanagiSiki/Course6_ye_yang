@@ -1,5 +1,6 @@
 ﻿using Course6_ye_yang_Model.Employee;
 using Course6_ye_yang_Service;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,8 @@ namespace Course6_ye_yang.Controllers
         {
             ViewBag.Type = employeeService.GetTitle();
             List<EmployeeSearchResult> employeeSearchResult = employeeService.GetSearchResultByArg(arg);
-            ViewBag.EmployeeSearchResult = employeeSearchResult;
+
+            ViewBag.EmployeeSearchResultTmp = JsonConvert.SerializeObject(employeeSearchResult);
             return View(arg);
         }
 

@@ -2,7 +2,7 @@
 @{
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
-<script src="~/Scripts/SearchEmployee.js"></script>
+<script src="~/Scripts/Employee/SearchEmployee.js"></script>
 <h2>查詢</h2>
 @using (Html.BeginForm("SearchEmployee", "Employee", FormMethod.Post, new { id = "Form" }))
 {
@@ -42,7 +42,7 @@
         <tr>
             <td> </td>
             <td colspan="3">
-                <input type="submit" value="查詢" />
+                <input type="submit" id="searchbtn" value="查詢" />
                 <input type="button" id="clearbtn" value="清除">
                 <input type="button" id="newbtn" value="新增員工">
             </td>
@@ -54,7 +54,11 @@
 
 <div id="SearchResultSection">
     <div id="grid"></div>
-    @if (ViewBag.EmployeeSearchResult != null)
+    @{
+        var tmp = ViewBag.EmployeeSearchResultTmp;
+        <input id="tmpBag" type="hidden" value="@tmp" />
+    }
+    @*@if (ViewBag.EmployeeSearchResult != null)
     {
 
         <table class="table table-bordered table-striped">
@@ -86,5 +90,5 @@
                 </tr>
             }
         </table>
-    }
+    }*@
 </div>
