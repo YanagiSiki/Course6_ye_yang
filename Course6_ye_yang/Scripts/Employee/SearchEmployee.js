@@ -1,21 +1,4 @@
 ﻿$(document).ready(function () {
-    $(".newbtn").click(function (e) {
-        var confirmbox = confirm("確定要刪除?");
-        if (confirmbox == true) {
-            var tr = $(this).closest('tr')
-            $.ajax({
-                type: "POST",
-                url: "/Employee/DeleteEmployee",
-                data: "EmployeeID=" + $(this).next().val(),
-                dataType: "json",
-                success: function (response) {
-                    $(tr).remove();
-                    alert("刪除成功");
-                }
-            });
-        }
-        return false;
-    });
 
     $("#clearbtn").click(function () {
         $("#Form")[0].reset();
@@ -57,19 +40,38 @@
             numeric: false
         },
         columns: [//這也是欄位名稱，但我不知道和上面的差別，所以都改吧orz
-            { field: "EmployeeId", title: "EmployeeId", width: "15%" },
-            { field: "EmployeeName", title: "EmployeeName", width: "10%" },
-            { field: "CodeType", title: "CodeType", width: "10%" },
-            { field: "HireDate", title: "HireDate", width: "10%" },
-            { field: "Gender", title: "Gender", width: "10%" },
+            { field: "EmployeeId", title: "EmployeeId", width: "5%" },
+            { field: "EmployeeName", title: "EmployeeName", width: "15%" },
+            { field: "CodeType", title: "CodeType", width: "20%" },
+            { field: "HireDate", title: "HireDate", width: "15%" },
+            { field: "Gender", title: "Gender", width: "15%" },
             { field: "Age", title: "Age", width: "10%" },
-            { command:{ text: "修改", click: GotoUpdatePage}, title: "", width: "10%" }
+            { command: { text: "修改", click: GotoUpdatePage }, title: "", width: "10%" },
+            { command: { text: "刪除", click: PostToDeletePage }, title: "", width: "10%" }
         ]
     });
     function GotoUpdatePage(e) {
         var tr = $(e.currentTarget).closest("tr");
         var item = $("#grid").data("kendoGrid").dataItem(tr).EmployeeId;
-        window.location.replace("../UpdateEmployee/" + item);
+        window.location.replace("UpdateEmployee/" + item);
+    }
+    function PostToDeletePage(e) {
+        var confirmbox = confirm("確定要刪除?");
+        if (confirmbox == true) {
+            var tr = $(e.currentTarget).closest("tr");
+            var item = $("#grid").data("kendoGrid").dataItem(tr).EmployeeId;
+            $.ajax({
+                type: "POST",
+                url: "/Employee/DeleteEmployee",
+                data: "EmployeeID=" + item,
+                dataType: "json",
+                success: function (response) {                   
+                    $("#grid").data("kendoGrid").dataSource.remove($("#grid").data("kendoGrid").dataItem(tr));
+                    alert("刪除成功");
+                }
+            });
+        }
+        return false;
     }
 
 })

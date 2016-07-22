@@ -1,6 +1,6 @@
 ﻿$(document).ready(function () {
     $("#backbtn").click(function () {
-        window.location.replace("../SearchEmployee");
+        window.location.replace("SearchEmployee");
     });
 
     $("#MonthlyPayment").keyup(function () {

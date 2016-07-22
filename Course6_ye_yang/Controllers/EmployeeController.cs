@@ -29,7 +29,6 @@ namespace Course6_ye_yang.Controllers
         {
             ViewBag.Type = employeeService.GetTitle();
             List<EmployeeSearchResult> employeeSearchResult = employeeService.GetSearchResultByArg(arg);
-
             ViewBag.EmployeeSearchResultTmp = JsonConvert.SerializeObject(employeeSearchResult);
             return View(arg);
         }
