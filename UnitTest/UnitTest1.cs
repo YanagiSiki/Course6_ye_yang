@@ -24,8 +24,7 @@ namespace UnitTest
             //Assert
             employeeService.GetSearchResultByArg(arg);
             Assert.AreEqual(3, results.Count);
-
-
+           
         }
 
         [TestMethod]
