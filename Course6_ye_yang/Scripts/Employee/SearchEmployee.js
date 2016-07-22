@@ -9,14 +9,21 @@
         window.location.replace("InsertEmployee");
     });
 
-    //Kendo
+    //kendoButton
     $("#searchbtn").kendoButton();
     $("#clearbtn").kendoButton();
     $("#newbtn").kendoButton();
-
+    //kendoDropDownList
+    $("#Title").kendoDropDownList({
+        dataTextField: "Text",
+        dataValueField: "Value",
+        dataSource: jQuery.parseJSON($("#TypeBag").val()),
+        optionLabel: " "
+    });
+    //kendoGrid
     $("#grid").kendoGrid({
         dataSource: {
-            data: jQuery.parseJSON($("#tmpBag").val()),//資料來源為products變數
+            data: jQuery.parseJSON($("#ResultsBag").val()),//資料來源為products變數
             schema: {
                 model: {
                     fields: {//這是欄位名稱

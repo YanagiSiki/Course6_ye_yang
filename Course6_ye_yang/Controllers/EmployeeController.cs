@@ -20,16 +20,25 @@ namespace Course6_ye_yang.Controllers
 
         public ActionResult SearchEmployee()
         {
-            ViewBag.Type = employeeService.GetTitle();
-            return View();
+            //Create DropdownList
+            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());
+            return View(new EmployeeSearchArg());
         }
 
         [HttpPost]
         public ActionResult SearchEmployee(EmployeeSearchArg arg)
         {
-            ViewBag.Type = employeeService.GetTitle();
+            //Create DropdownList
+            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());
+            //This is Results
             List<EmployeeSearchResult> employeeSearchResult = employeeService.GetSearchResultByArg(arg);
-            ViewBag.EmployeeSearchResultTmp = JsonConvert.SerializeObject(employeeSearchResult);
+            ViewBag.EmployeeSearchResultJSON = JsonConvert.SerializeObject(employeeSearchResult);
+            //Arg should be shown
+            ViewBag.ViewEmployeeId = arg.EmployeeId;
+            ViewBag.ViewEmployeeName = arg.EmployeeName;
+            ViewBag.ViewEndHireDate = arg.EndHireDate;
+            ViewBag.ViewStartHireDate = arg.StartHireDate;
+            ViewBag.ViewTitle = arg.Title;            
             return View(arg);
         }
 

@@ -13,20 +13,22 @@
         <tr>
             <td>員工編號</td>
             <td colspan="3">
-                <input type="number" id="EmployeeId" class="EmployeeId"  required/>
+                <input type="number" id="EmployeeId" class="EmployeeId" value="@ViewBag.ViewEmployeeId"/>
                 @*@Html.EditorFor(model => model.EmployeeId)*@
             </td>
         </tr>
         <tr>
             <td>員工姓名</td>
             <td colspan="3">
-                @Html.EditorFor(model => model.EmployeeName)
+                <input type="text" id="EmployeeName" class="EmployeeName" value="@ViewBag.ViewEmployeeName" name="EmployeeName" />
+                @*@Html.EditorFor(model => model.EmployeeName)*@
             </td>
         </tr>
         <tr>
             <td>職稱</td>
             <td colspan="3">
-                @Html.DropDownListFor(model => model.Title, (List<SelectListItem>)ViewBag.Type, String.Empty, new { id = "SelectTitle" })
+                <input id="Title" class="Title" value="@ViewBag.ViewTitle" name="Title" />
+                @*@Html.DropDownListFor(model => model.Title, (List<SelectListItem>)ViewBag.Type, String.Empty, new { id = "SelectTitle" })*@
 
             </td>
         </tr>
@@ -34,9 +36,9 @@
             <td>任職日期</td>
             <td>
                 @*@Html.EditorFor(model => model.StartHireDate) ~ @Html.EditorFor(model => model.EndHireDate)*@
-                <input id="StartHireDate" type="date" name="StartHireDate" /> ~
-                <input id="EndHireDate" type="date" name="EndHireDate" />
-                @Html.ValidationMessageFor(model => model.StartHireDate)
+                <input id="StartHireDate" type="date" name="StartHireDate" value="@ViewBag.ViewStartHireDate" /> ~
+                <input id="EndHireDate" type="date" name="EndHireDate" value="@ViewBag.ViewEndHireDate" />
+                @*@Html.ValidationMessageFor(model => model.StartHireDate)*@
 
             </td>
         </tr>
@@ -56,8 +58,10 @@
 <div id="SearchResultSection">
     <div id="grid"></div>
     @{
-        var tmp = ViewBag.EmployeeSearchResultTmp;
-        <input id="tmpBag" type="hidden" value="@tmp" />
+        var Results = ViewBag.EmployeeSearchResultJSON;        
+        <input id="ResultsBag" type="hidden" value="@Results" />
+        var DropdownType = ViewBag.DropdownType;
+        <input id="TypeBag" type="hidden" value="@DropdownType" />
     }
     @*@if (ViewBag.EmployeeSearchResult != null)
     {
