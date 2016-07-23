@@ -13,5 +13,6 @@ namespace Course6_ye_yang_Service
         System.Collections.Generic.List<System.Web.Mvc.SelectListItem> GetTitle();
         int InsertEmployee(Course6_ye_yang_Model.Employee.Employee arg);
         void UpdateEmployee(Course6_ye_yang_Model.Employee.Employee arg);
+
     }
 }

@@ -6,6 +6,5 @@ C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Common\bin
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Common\bin\Debug\Course6_ye_yang_Common.pdb
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Common\bin\Debug\log4net.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Common\bin\Debug\log4net.xml
-C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Common\obj\Debug\Course6_ye_yang_Common.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Common\obj\Debug\Course6_ye_yang_Common.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang_Common\obj\Debug\Course6_ye_yang_Common.pdb

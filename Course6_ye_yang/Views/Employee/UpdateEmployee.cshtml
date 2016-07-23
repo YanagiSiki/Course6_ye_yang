@@ -9,123 +9,164 @@
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
-
+    <div>
+        @{
+    Course6_ye_yang_Model.Employee.Employee emp;
+    if (ViewBag.ViewArg != null)
+    {
+        emp = (Course6_ye_yang_Model.Employee.Employee)ViewBag.ViewArg;
+    }
+    else
+    {
+        emp = new Course6_ye_yang_Model.Employee.Employee();
+    }
+        }
+    </div>
     <table class="table table-bordered">
         <tr>
             <td>編號</td>
             <td>
-                @Html.TextBoxFor(model => model.EmployeeID, new { @readonly = "readonly", id = "Number" })
-                @Html.ValidationMessageFor(model => model.EmployeeID)
+                @*@Html.TextBoxFor(model => model.EmployeeID, new { @readonly = "readonly", id = "Number" })
+                @Html.ValidationMessageFor(model => model.EmployeeID)*@
+                <input type="number" id="EmployeeID" class="EmployeeID" value="@emp.EmployeeID" name="EmployeeID" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>姓名(First Name)</td>
             <td colspan="3">
-                @Html.EditorFor(model => model.FirstName)
-                @Html.ValidationMessageFor(model => model.FirstName)
+                @*@Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)*@
+                <input type="text" id="FirstName" class="FirstName k-textbox" value="@emp.FirstName" name="FirstName" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>姓名(Last Name)</td>
             <td colspan="3">
-                @Html.EditorFor(model => model.LastName)
-                @Html.ValidationMessageFor(model => model.LastName)
+                @*@Html.EditorFor(model => model.LastName)
+                @Html.ValidationMessageFor(model => model.LastName)*@
+                <input type="text" id="LastName" class="LastName k-textbox" value="@emp.LastName" name="LastName" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>職稱</td>
             <td colspan="3">
-                @Html.DropDownListFor(model => model.Title, (List<SelectListItem>)ViewBag.Type, String.Empty, new { id = "SelectTitle" })
-                @Html.ValidationMessageFor(model => model.Title)
+                @*@Html.DropDownListFor(model => model.Title, (List<SelectListItem>)ViewBag.Type, String.Empty, new { id = "SelectTitle" })
+                @Html.ValidationMessageFor(model => model.Title)*@
+                <input id="Title" class="Title" value="@emp.Title" name="Title" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>稱謂</td>
             <td colspan="3">
-                @Html.EditorFor(model => model.TitleOfCourtesy)
-                @Html.ValidationMessageFor(model => model.TitleOfCourtesy)
+                @*@Html.EditorFor(model => model.TitleOfCourtesy)
+                @Html.ValidationMessageFor(model => model.TitleOfCourtesy)*@
+                <input type="text" id="TitleOfCourtesy" class="TitleOfCourtesy" value="@emp.TitleOfCourtesy" name="TitleOfCourtesy" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>任職日期</td>
             <td colspan="3">
                 @*<input id="HireDate" type="date" name="HireDate" />*@
-                @Html.TextBoxFor(model => model.HireDate, "{0:yyyy-MM-dd}", new { @type = "date" })
-                @Html.ValidationMessageFor(model => model.HireDate)
+                @*@Html.TextBoxFor(model => model.HireDate, "{0:yyyy-MM-dd}", new { @type = "date" })
+                @Html.ValidationMessageFor(model => model.HireDate)*@
+                <input id="HireDate" type="date" name="HireDate" value="@emp.HireDate" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>生日</td>
             <td colspan="3">
                 @*<input id="BirthDate" type="date" name="BirthDate" />*@
-                @Html.TextBoxFor(model => model.BirthDate, "{0:yyyy-MM-dd}", new { @type = "date" })
-                @Html.ValidationMessageFor(model => model.BirthDate)
+                @*@Html.TextBoxFor(model => model.BirthDate, "{0:yyyy-MM-dd}", new { @type = "date" })
+                @Html.ValidationMessageFor(model => model.BirthDate)*@
+                <input id="BirthDate" type="date" name="BirthDate" value="@emp.BirthDate" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>國家</td>
             <td colspan="3">
-                @Html.DropDownListFor(model => model.Country, (List<SelectListItem>)ViewBag.ViewCountry, String.Empty, new { id = "SelectCountry" })
-                @Html.ValidationMessageFor(model => model.Country)
+                @*@Html.DropDownListFor(model => model.Country, (List<SelectListItem>)ViewBag.ViewCountry, String.Empty, new { id = "SelectCountry" })
+                @Html.ValidationMessageFor(model => model.Country)*@
+                <input id="Country" class="Country" value="@emp.Country" name="Country" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>城市</td>
             <td colspan="3">
-                @Html.DropDownListFor(model => model.City, (List<SelectListItem>)ViewBag.ViewCity, String.Empty, new { id = "SelectCity" })
-                @Html.ValidationMessageFor(model => model.City)
+                @*@Html.DropDownListFor(model => model.City, (List<SelectListItem>)ViewBag.ViewCity, String.Empty, new { id = "SelectCity" })
+                @Html.ValidationMessageFor(model => model.City)*@
+                <input id="City" class="City" value="@emp.City" name="City" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>地址</td>
             <td colspan="3">
-                @Html.EditorFor(model => model.Address)
-                @Html.ValidationMessageFor(model => model.Address)
+                @*@Html.EditorFor(model => model.Address)
+                @Html.ValidationMessageFor(model => model.Address)*@
+                <input type="text" id="Address" class="Address" value="@emp.Address" name="Address" required />
             </td>
         </tr>
         <tr>
             <td><lebel class="sign">*</lebel>電話</td>
             <td colspan="3">
-                @Html.EditorFor(model => model.Phone)
-                @Html.ValidationMessageFor(model => model.Phone)
+                @*@Html.EditorFor(model => model.Phone)
+                @Html.ValidationMessageFor(model => model.Phone)*@
+                <input type="text" id="Phone" class="Phone" value="@emp.Phone" name="Phone" required />
             </td>
         </tr>
         <tr>
             <td>性別</td>
             <td colspan="3">
-                @Html.DropDownListFor(model => model.Gender, (List<SelectListItem>)ViewBag.ViewGender, String.Empty, new { id = "SelectGender" })
-                @Html.ValidationMessageFor(model => model.Gender)
+                @*@Html.DropDownListFor(model => model.Gender, (List<SelectListItem>)ViewBag.ViewGender, String.Empty, new { id = "SelectGender" })
+                @Html.ValidationMessageFor(model => model.Gender)*@
+                <input id="Gender" class="Gender" value="@emp.Gender" name="Gender" />
             </td>
         </tr>
         <tr>
             <td>直屬主管</td>
             <td colspan="3">
-                @Html.DropDownListFor(model => model.ManagerID, (List<SelectListItem>)ViewBag.ViewManagerID, String.Empty, new { id = "SelectManagerID" })
-                @Html.ValidationMessageFor(model => model.ManagerID)
+                @*@Html.DropDownListFor(model => model.ManagerID, (List<SelectListItem>)ViewBag.ViewManagerID, String.Empty, new { id = "SelectManagerID" })
+                @Html.ValidationMessageFor(model => model.ManagerID)*@
+                <input id="ManagerID" class="ManagerID" value="@emp.ManagerID" name="ManagerID" />
             </td>
         </tr>
         <tr>
             <td>月薪</td>
             <td colspan="3">
-                @Html.TextBoxFor(model => model.MonthlyPayment, new { @class = "digit" })
-                @Html.ValidationMessageFor(model => model.MonthlyPayment)
+                @*@Html.TextBoxFor(model => model.MonthlyPayment, new { @class = "digit" })
+                @Html.ValidationMessageFor(model => model.MonthlyPayment)*@
+                <input type="number" id="MonthlyPayment" class="MonthlyPayment digit" value="@emp.MonthlyPayment" name="MonthlyPayment" />
             </td>
         </tr>
         <tr>
             <td>年薪</td>
             <td colspan="3">
-                @Html.TextBoxFor(model => model.YearlyPayment, new { @readonly = "readonly", @class = "digit" })
-                @Html.ValidationMessageFor(model => model.YearlyPayment)
+                @*@Html.TextBoxFor(model => model.YearlyPayment, new { @readonly = "readonly", @class = "digit" })
+                @Html.ValidationMessageFor(model => model.YearlyPayment)*@
+                <input type="text" id="YearlyPayment" class="YearlyPayment digit" value="@emp.YearlyPayment" name="YearlyPayment" />
             </td>
         </tr>
         <tr>
             <td></td>
             <td>
-                <input type="submit" value="存檔" />
+                <input type="submit" value="存檔" id="save" />
                 <a id="btnDelete" href="#">刪除</a>
                 <input type="button" id="backbtn" value="回上一頁">
             </td>
         </tr>
 
     </table>
+    <div>
+        @{
+    var DropdownType = ViewBag.DropdownType;
+    <input id="DropdownType" type="hidden" value="@DropdownType" />
+    var DropdownCountry = ViewBag.DropdownCountry;
+    <input id="DropdownCountry" type="hidden" value="@DropdownCountry" />
+    var DropdownCity = ViewBag.DropdownCity;
+    <input id="DropdownCity" type="hidden" value="@DropdownCity" />
+    var DropdownGender = ViewBag.DropdownGender;
+    <input id="DropdownGender" type="hidden" value="@DropdownGender" />
+    var DropdownManagerID = ViewBag.DropdownManagerID;
+    <input id="DropdownManagerID" type="hidden" value="@DropdownManagerID" />
+        }
+    </div>
 }

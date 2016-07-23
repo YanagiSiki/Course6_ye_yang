@@ -20,6 +20,37 @@
         dataSource: jQuery.parseJSON($("#TypeBag").val()),
         optionLabel: " "
     });
+    //kendoNumericTextBox
+    $("#EmployeeId").kendoNumericTextBox({ format: "{0:0}", min: 0, decimals: 0 });
+    //kendoDatePicker
+    $("#StartHireDate").kendoDatePicker({ format: "yyyy/MM/dd", min: "1753/01/01" });
+    $("#EndHireDate").kendoDatePicker({ format: "yyyy/MM/dd", min: "1753/01/01" });
+    //kendoValidator
+    $("#StartHireDate").kendoValidator({
+        rules: {
+            date: DateFromat
+        },
+        messages: {            
+            date: "Start & End有誤"
+        }      
+    });
+    $("#EndHireDate").kendoValidator({
+        rules: {
+            date: DateFromat
+        },
+        messages: {
+            date: "Start & End有誤"
+        }
+    });
+
+    function DateFromat (input) {
+        if ($("#EndHireDate").val() === "" || $("#StartHireDate").val() === "") {
+            return true;
+        }
+        else if($("#EndHireDate").val() >= $("#StartHireDate").val()){
+            return true;
+        }
+    }
     //kendoGrid
     $("#grid").kendoGrid({
         dataSource: {
@@ -65,7 +96,7 @@
     function PostToDeletePage(e) {
         var confirmbox = confirm("確定要刪除?");
         if (confirmbox == true) {
-            var tr = $(e.currentTarget).closest("tr");
+            var tr = $(e.currentTarget).closest("tr");            
             var item = $("#grid").data("kendoGrid").dataItem(tr).EmployeeId;
             $.ajax({
                 type: "POST",

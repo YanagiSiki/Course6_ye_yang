@@ -20,16 +20,16 @@ namespace Course6_ye_yang.Controllers
 
         public ActionResult SearchEmployee()
         {
-            //Create DropdownList
-            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());
+            //Initialize
+            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());                    
             return View(new EmployeeSearchArg());
         }
 
         [HttpPost]
         public ActionResult SearchEmployee(EmployeeSearchArg arg)
         {
-            //Create DropdownList
-            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());
+            //Initialize
+            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());           
             //This is Results
             List<EmployeeSearchResult> employeeSearchResult = employeeService.GetSearchResultByArg(arg);
             ViewBag.EmployeeSearchResultJSON = JsonConvert.SerializeObject(employeeSearchResult);
@@ -44,22 +44,26 @@ namespace Course6_ye_yang.Controllers
 
         public ActionResult InsertEmployee()
         {
-            ViewBag.Type = employeeService.GetTitle();
-            ViewBag.Country = employeeService.GetCountry();
-            ViewBag.City = employeeService.GetCity();
-            ViewBag.Gender = employeeService.GetGender();
-            ViewBag.ManagerID = employeeService.GetManagerID();
+            //Initialize
+            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());
+            ViewBag.DropdownCountry = JsonConvert.SerializeObject(employeeService.GetCountry());
+            ViewBag.DropdownCity = JsonConvert.SerializeObject(employeeService.GetCity());
+            ViewBag.DropdownGender = JsonConvert.SerializeObject(employeeService.GetGender());
+            ViewBag.DropdownManagerID = JsonConvert.SerializeObject(employeeService.GetManagerID());
             return View(new Employee());
         }
 
         [HttpPost]
         public ActionResult InsertEmployee(Employee arg)
         {
-            ViewBag.Type = employeeService.GetTitle();
-            ViewBag.Country = employeeService.GetCountry();
-            ViewBag.City = employeeService.GetCity();
-            ViewBag.Gender = employeeService.GetGender();
-            ViewBag.ManagerID = employeeService.GetManagerID();
+            //Initialize
+            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());
+            ViewBag.DropdownCountry = JsonConvert.SerializeObject(employeeService.GetCountry());
+            ViewBag.DropdownCity = JsonConvert.SerializeObject(employeeService.GetCity());
+            ViewBag.DropdownGender = JsonConvert.SerializeObject(employeeService.GetGender());
+            ViewBag.DropdownManagerID = JsonConvert.SerializeObject(employeeService.GetManagerID());
+            //Arg should be shown
+            ViewBag.ViewArg = arg;
             if (ModelState.IsValid)
             {
                 ViewBag.Successful = employeeService.InsertEmployee(arg);
@@ -70,11 +74,12 @@ namespace Course6_ye_yang.Controllers
         [HttpGet]
         public ActionResult UpdateEmployee(string id)
         {
-            ViewBag.Type = employeeService.GetTitle();
-            ViewBag.ViewCountry = employeeService.GetCountry();
-            ViewBag.ViewCity = employeeService.GetCity();
-            ViewBag.ViewGender = employeeService.GetGender();
-            ViewBag.ViewManagerID = employeeService.GetManagerID();
+            //Initialize
+            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());
+            ViewBag.DropdownCountry = JsonConvert.SerializeObject(employeeService.GetCountry());
+            ViewBag.DropdownCity = JsonConvert.SerializeObject(employeeService.GetCity());
+            ViewBag.DropdownGender = JsonConvert.SerializeObject(employeeService.GetGender());
+            ViewBag.DropdownManagerID = JsonConvert.SerializeObject(employeeService.GetManagerID());            
             if (id != null)
             {
                 try
@@ -82,6 +87,8 @@ namespace Course6_ye_yang.Controllers
                     Employee arg = employeeService.GetEmployeeByID(id);
                     arg.EmployeeID = Convert.ToInt32(id);
                     ViewBag.ID = Convert.ToInt32(id);
+                    //Arg should be shown
+                    ViewBag.ViewArg = arg;
                     return View(arg);
                 }
                 catch (Exception e)
@@ -95,11 +102,14 @@ namespace Course6_ye_yang.Controllers
         [HttpPost]
         public ActionResult UpdateEmployee(Employee arg)
         {
-            ViewBag.Type = employeeService.GetTitle();
-            ViewBag.ViewCountry = employeeService.GetCountry();
-            ViewBag.ViewCity = employeeService.GetCity();
-            ViewBag.ViewGender = employeeService.GetGender();
-            ViewBag.ViewManagerID = employeeService.GetManagerID();
+            //Initialize
+            ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());
+            ViewBag.DropdownCountry = JsonConvert.SerializeObject(employeeService.GetCountry());
+            ViewBag.DropdownCity = JsonConvert.SerializeObject(employeeService.GetCity());
+            ViewBag.DropdownGender = JsonConvert.SerializeObject(employeeService.GetGender());
+            ViewBag.DropdownManagerID = JsonConvert.SerializeObject(employeeService.GetManagerID());
+            //Arg should be shown
+            ViewBag.ViewArg = arg;
             if (ModelState.IsValid)
             {
                 employeeService.UpdateEmployee(arg);

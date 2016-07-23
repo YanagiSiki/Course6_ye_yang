@@ -8,19 +8,18 @@
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
-
     <table class="table table-bordered">
         <tr>
             <td>員工編號</td>
             <td colspan="3">
-                <input type="number" id="EmployeeId" class="EmployeeId" value="@ViewBag.ViewEmployeeId"/>
+                <input type="text" id="EmployeeId" class="EmployeeId" value="@ViewBag.ViewEmployeeId" name="EmployeeId" />
                 @*@Html.EditorFor(model => model.EmployeeId)*@
             </td>
         </tr>
         <tr>
             <td>員工姓名</td>
             <td colspan="3">
-                <input type="text" id="EmployeeName" class="EmployeeName" value="@ViewBag.ViewEmployeeName" name="EmployeeName" />
+                <input type="text" id="EmployeeName" class="EmployeeName k-textbox" value="@ViewBag.ViewEmployeeName" name="EmployeeName" />
                 @*@Html.EditorFor(model => model.EmployeeName)*@
             </td>
         </tr>

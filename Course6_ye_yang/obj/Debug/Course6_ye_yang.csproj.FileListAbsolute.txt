@@ -41,6 +41,7 @@ C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\Course6_ye
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\Course6_ye_yang\obj\Debug\Course6_ye_yang.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\Course6_ye_yang\obj\Debug\Course6_ye_yang.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\Course6_ye_yang\obj\Debug\Course6_ye_yang.pdb
+C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\obj\Debug\Course6_ye_yang.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\bin\Course6_ye_yang.dll.config
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\bin\Course6_ye_yang.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\bin\Course6_ye_yang.pdb
@@ -100,6 +101,5 @@ C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\bin\zh-Han
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\bin\zh-Hant\System.Web.WebPages.resources.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\bin\zh-Hant\System.Web.WebPages.Deployment.resources.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\bin\zh-Hant\System.Web.WebPages.Razor.resources.dll
-C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\obj\Debug\Course6_ye_yang.csprojResolveAssemblyReference.cache
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\obj\Debug\Course6_ye_yang.dll
 C:\Users\ASUS\Desktop\新增資料夾\Course6_ye_yang\Course6_ye_yang\obj\Debug\Course6_ye_yang.pdb
