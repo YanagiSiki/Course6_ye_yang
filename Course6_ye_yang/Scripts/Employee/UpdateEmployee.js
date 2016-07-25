@@ -77,6 +77,11 @@
         },
         messages: {
             date: "生日不可大於今天"
-        }
+        },
+        errorTemplate: "<span style='margin-left:50px'>#=message#</sapn>"
+    });
+    //
+    $("#Form").kendoValidator({
+        errorTemplate: "<span style='margin-left:50px'>#=message#</sapn>"
     });
 })
