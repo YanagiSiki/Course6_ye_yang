@@ -8,25 +8,37 @@
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
+    
     <table class="table table-bordered">
+        @{
+            Course6_ye_yang_Model.Employee.EmployeeSearchArg arg;
+            if (ViewBag.ViewArg != null)
+            {
+                arg = (Course6_ye_yang_Model.Employee.EmployeeSearchArg)ViewBag.ViewArg;
+            }
+            else
+            {
+                arg = new Course6_ye_yang_Model.Employee.EmployeeSearchArg();
+            }
+        }
         <tr>
             <td>員工編號</td>
             <td colspan="3">
-                <input type="text" id="EmployeeId" class="EmployeeId" value="@ViewBag.ViewEmployeeId" name="EmployeeId" />
+                <input type="text" id="EmployeeId" class="EmployeeId digit" value="@arg.EmployeeId" name="EmployeeId" />
                 @*@Html.EditorFor(model => model.EmployeeId)*@
             </td>
         </tr>
         <tr>
             <td>員工姓名</td>
             <td colspan="3">
-                <input type="text" id="EmployeeName" class="EmployeeName k-textbox" value="@ViewBag.ViewEmployeeName" name="EmployeeName" />
+                <input type="text" id="EmployeeName" class="EmployeeName k-textbox" value="@arg.EmployeeName" name="EmployeeName" />
                 @*@Html.EditorFor(model => model.EmployeeName)*@
             </td>
         </tr>
         <tr>
             <td>職稱</td>
             <td colspan="3">
-                <input id="Title" class="Title" value="@ViewBag.ViewTitle" name="Title" />
+                <input id="Title" class="Title" value="@arg.Title" name="Title" />
                 @*@Html.DropDownListFor(model => model.Title, (List<SelectListItem>)ViewBag.Type, String.Empty, new { id = "SelectTitle" })*@
 
             </td>
@@ -35,8 +47,8 @@
             <td>任職日期</td>
             <td>
                 @*@Html.EditorFor(model => model.StartHireDate) ~ @Html.EditorFor(model => model.EndHireDate)*@
-                <input id="StartHireDate" type="date" name="StartHireDate" value="@ViewBag.ViewStartHireDate" /> ~
-                <input id="EndHireDate" type="date" name="EndHireDate" value="@ViewBag.ViewEndHireDate" />
+                <input id="StartHireDate" type="date" name="StartHireDate" value="@arg.StartHireDate" /> ~
+                <input id="EndHireDate" type="date" name="EndHireDate" value="@arg.EndHireDate" />
                 @*@Html.ValidationMessageFor(model => model.StartHireDate)*@
 
             </td>

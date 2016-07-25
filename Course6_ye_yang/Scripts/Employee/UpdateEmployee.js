@@ -6,7 +6,7 @@
 
     $("#btnDelete").click(function (e) {
         var confirmbox = confirm("確定要刪除?");
-        var empid = $("#Number").val();
+        var empid = $("#EmployeeID").val();
         if (confirmbox == true) {
             $.ajax({
                 type: "POST",

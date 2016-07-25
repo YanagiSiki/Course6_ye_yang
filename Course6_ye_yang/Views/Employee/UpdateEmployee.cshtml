@@ -28,7 +28,7 @@
             <td>
                 @*@Html.TextBoxFor(model => model.EmployeeID, new { @readonly = "readonly", id = "Number" })
                 @Html.ValidationMessageFor(model => model.EmployeeID)*@
-                <input type="number" id="EmployeeID" class="EmployeeID" value="@emp.EmployeeID" name="EmployeeID" required />
+                <input type="number" id="EmployeeID" class="EmployeeID digit" value="@emp.EmployeeID" name="EmployeeID" required readonly/>
             </td>
         </tr>
         <tr>
