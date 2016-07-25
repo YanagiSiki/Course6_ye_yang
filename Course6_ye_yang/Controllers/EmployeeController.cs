@@ -19,7 +19,7 @@ namespace Course6_ye_yang.Controllers
         }
 
         public ActionResult SearchEmployee()
-        {
+        {            
             //Initialize
             ViewBag.DropdownType = JsonConvert.SerializeObject(employeeService.GetTitle());                    
             return View(new EmployeeSearchArg());
