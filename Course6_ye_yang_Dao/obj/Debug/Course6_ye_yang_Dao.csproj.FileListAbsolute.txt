@@ -36,8 +36,6 @@ D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Common.Logging.Core.xml
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Spring.Core.pdb
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Spring.Core.xml
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\log4net.xml
-D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\System.Web.Mvc.xml
-D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\zh-Hant\System.Web.Mvc.resources.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\obj\Debug\Course6_ye_yang_Dao.csprojResolveAssemblyReference.cache
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\obj\Debug\Course6_ye_yang_Dao.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\obj\Debug\Course6_ye_yang_Dao.pdb

@@ -50,9 +50,7 @@ D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Common.Logging.Core.p
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Common.Logging.Core.xml
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Spring.Core.pdb
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Spring.Core.xml
-D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\System.Web.Mvc.xml
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\log4net.xml
-D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\zh-Hant\System.Web.Mvc.resources.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\obj\Debug\Course6_ye_yang_Service.csprojResolveAssemblyReference.cache
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\obj\Debug\Course6_ye_yang_Service.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\obj\Debug\Course6_ye_yang_Service.pdb
