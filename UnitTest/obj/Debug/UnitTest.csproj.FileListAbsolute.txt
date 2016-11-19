@@ -36,3 +36,4 @@ D:\Other\Course6_ye_yang\UnitTest\bin\Debug\zh-Hant\System.Web.Mvc.resources.dll
 D:\Other\Course6_ye_yang\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
 D:\Other\Course6_ye_yang\UnitTest\obj\Debug\UnitTest.dll
 D:\Other\Course6_ye_yang\UnitTest\obj\Debug\UnitTest.pdb
+D:\Other\Course6_ye_yang\UnitTest\bin\Debug\System.Web.dll
