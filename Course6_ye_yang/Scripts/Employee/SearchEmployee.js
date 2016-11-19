@@ -30,9 +30,9 @@
         rules: {
             date: DateFromat
         },
-        messages: {            
+        messages: {
             date: "Start & End有誤"
-        }      
+        }
     });
     $("#EndHireDate").kendoValidator({
         rules: {
@@ -43,11 +43,11 @@
         }
     });
 
-    function DateFromat (input) {
+    function DateFromat(input) {
         if ($("#EndHireDate").val() === "" || $("#StartHireDate").val() === "") {
             return true;
         }
-        else if($("#EndHireDate").val() >= $("#StartHireDate").val()){
+        else if ($("#EndHireDate").val() >= $("#StartHireDate").val()) {
             return true;
         }
     }
@@ -96,14 +96,14 @@
     function PostToDeletePage(e) {
         var confirmbox = confirm("確定要刪除?");
         if (confirmbox == true) {
-            var tr = $(e.currentTarget).closest("tr");            
+            var tr = $(e.currentTarget).closest("tr");
             var item = $("#grid").data("kendoGrid").dataItem(tr).EmployeeId;
             $.ajax({
                 type: "POST",
                 url: "/Employee/DeleteEmployee",
                 data: "EmployeeID=" + item,
                 dataType: "json",
-                success: function (response) {                   
+                success: function (response) {
                     $("#grid").data("kendoGrid").dataSource.remove($("#grid").data("kendoGrid").dataItem(tr));
                     alert("刪除成功");
                 }
