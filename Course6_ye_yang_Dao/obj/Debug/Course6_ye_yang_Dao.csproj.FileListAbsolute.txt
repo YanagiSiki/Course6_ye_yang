@@ -26,7 +26,6 @@ D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Course6_ye_yang_Common.dl
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Course6_ye_yang_Model.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Spring.Core.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\log4net.dll
-D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\System.Web.Mvc.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Course6_ye_yang_Common.pdb
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Course6_ye_yang_Model.pdb
 D:\Other\Course6_ye_yang\Course6_ye_yang_Dao\bin\Debug\Common.Logging.pdb

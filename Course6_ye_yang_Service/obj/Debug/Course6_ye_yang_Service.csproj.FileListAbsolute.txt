@@ -40,6 +40,7 @@ D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Course6_ye_yang_Commo
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Course6_ye_yang_Dao.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Course6_ye_yang_Model.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Spring.Core.dll
+D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\System.Web.Mvc.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\log4net.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Course6_ye_yang_Common.pdb
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Course6_ye_yang_Dao.pdb
@@ -50,7 +51,9 @@ D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Common.Logging.Core.p
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Common.Logging.Core.xml
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Spring.Core.pdb
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\Spring.Core.xml
+D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\System.Web.Mvc.xml
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\log4net.xml
+D:\Other\Course6_ye_yang\Course6_ye_yang_Service\bin\Debug\zh-Hant\System.Web.Mvc.resources.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\obj\Debug\Course6_ye_yang_Service.csprojResolveAssemblyReference.cache
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\obj\Debug\Course6_ye_yang_Service.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Service\obj\Debug\Course6_ye_yang_Service.pdb
