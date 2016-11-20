@@ -12,5 +12,6 @@ D:\Other\Course6_ye_yang\Course6_ye_yang_Common\bin\Debug\Course6_ye_yang_Common
 D:\Other\Course6_ye_yang\Course6_ye_yang_Common\bin\Debug\Course6_ye_yang_Common.pdb
 D:\Other\Course6_ye_yang\Course6_ye_yang_Common\bin\Debug\log4net.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Common\bin\Debug\log4net.xml
+D:\Other\Course6_ye_yang\Course6_ye_yang_Common\obj\Debug\Course6_ye_yang_Common.csprojResolveAssemblyReference.cache
 D:\Other\Course6_ye_yang\Course6_ye_yang_Common\obj\Debug\Course6_ye_yang_Common.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Common\obj\Debug\Course6_ye_yang_Common.pdb
