@@ -14,4 +14,3 @@ D:\Other\Course6_ye_yang\Course6_ye_yang_Model\bin\Debug\Course6_ye_yang_Model.d
 D:\Other\Course6_ye_yang\Course6_ye_yang_Model\bin\Debug\Course6_ye_yang_Model.pdb
 D:\Other\Course6_ye_yang\Course6_ye_yang_Model\obj\Debug\Course6_ye_yang_Model.dll
 D:\Other\Course6_ye_yang\Course6_ye_yang_Model\obj\Debug\Course6_ye_yang_Model.pdb
-D:\Other\Course6_ye_yang\Course6_ye_yang_Model\bin\Debug\System.Web.dll
