@@ -70,10 +70,15 @@
     <div id="grid"></div>
     @{
         var Results = ViewBag.EmployeeSearchResultJSON;        
-        <input id="ResultsBag" type="hidden" value="@Results" />
+       
         var DropdownType = ViewBag.DropdownType;
-        <input id="TypeBag" type="hidden" value="@DropdownType" />
+        
     }
+      <script type="text/javascript">
+          var ResultsBag = @(new HtmlString(Json.Encode(Results)));
+          var TypeBag = @(new HtmlString(Json.Encode(DropdownType)));
+    </script>
+
     @*@if (ViewBag.EmployeeSearchResult != null)
     {
 

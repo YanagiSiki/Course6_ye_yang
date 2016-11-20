@@ -13,13 +13,16 @@
     $("#searchbtn").kendoButton();
     $("#clearbtn").kendoButton();
     $("#newbtn").kendoButton();
+
+    debugger;
     //kendoDropDownList
     $("#Title").kendoDropDownList({
         dataTextField: "Text",
         dataValueField: "Value",
-        dataSource: jQuery.parseJSON($("#TypeBag").val()),
+        dataSource: jQuery.parseJSON(TypeBag),
         optionLabel: " "
     });
+
     //kendoNumericTextBox
     $("#EmployeeId").kendoNumericTextBox({ format: "{0:0}", min: 0, decimals: 0 });
     //kendoDatePicker
@@ -54,7 +57,7 @@
     //kendoGrid
     $("#grid").kendoGrid({
         dataSource: {
-            data: jQuery.parseJSON($("#ResultsBag").val()),//資料來源為products變數
+            data: jQuery.parseJSON(ResultsBag),//資料來源為products變數
             schema: {
                 model: {
                     fields: {//這是欄位名稱
